@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="https://twitter.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex md:container mx-auto">
+        <div class="first w-16 md:w-[70%]">
+            <div class="sidebar md:items-end flex flex-col sticky top-0">
+                <div class="logo invert my-4 self-start mx-16">
+                    <svg class="w-8 mx-[121px]" viewBox="0 0 24 24" aria-hidden="true"
+                        class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="flex flex-col text-xl space-y-3 md:px-11 w-full">
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span> <span class="hidden md:block"> Home</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span> <span class="hidden md:block"> Explore</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span> <span class="hidden md:block"> Notifications</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span> <span class="hidden md:block"> Messages</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            diversity_2
+                        </span> <span class="hidden md:block"> Grok</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span> <span class="hidden md:block"> Profile</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            more
+                        </span> <span class="hidden md:block"> More</span>
+                    </li>
+                    <li>
+                        <div class="button w-full text-center my-4">
+                            <button
+                                class="bg-blue-500 px-16 py-3 text-white font-bold text-xl rounded-full hidden md:block">Post</button>
+                            <button
+                                class="bg-blue-500 mx-4 py-2 text-white font-bold text-xl rounded-full block w-10 md:hidden">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="userprofile mt-10 flex justify-center mx-10 gap-4 hover:bg-gray-700 rounded-full px-3 py-3">
+                    <div class="imge w-fit">
+                        <img src="https://pbs.twimg.com/profile_images/1899363071463927808/PeLQly8y_400x400.png" alt="" class="h-10 cursor-pointer rounded-full">
+                    </div>
+                    <div class="contexte flex flex-col cursor-pointer">
+                        <span>Apurva Singh Choudhary</span>
+                        <span>@APurv1711</span>
+                    </div>
+                    <div class="font-extrabold">...</div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="second w-full border-[1px] border-x-white border-y-black">
+            <div class="top flex relative ">
+                <div class="absolute w-[50px] h-1 bg-blue-700 bottom-0 left-[80px] rounded-full"></div>
+                <div class="left w-1/2 flex justify-center items-center px-3 my-4">
+                    <h1 class="font-bold">For You</h1>
+                </div>
+                <div class="right w-1/2 flex justify-center items-center px-3 my-4 ">
+                    <h1 class="font-bold">Following</h1>
+                </div>
+                <div class="settings px-3 my-4 cursor-pointer">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                </div>
+            </div>
+            <div class="bg-gray-600 w-full h-[1px]"></div>
+            <div class="whathappen flex gap-4">
+                <div class="img m-5">
+                    <img src="pepsi.png" alt="coke" class="h-7 w-6 rounded-full">
+                </div>
+                <div class="w-full">
+                    <input type="text" placeholder="What's happening?!"
+                        class="w-full bg-black text-white outline-none h-7 my-4 text-xl">
+                    <div class="text-blue-500 flex items-center  gap-2">
+                        <span class="material-symbols-outlined">
+                            globe_uk
+                        </span>
+                        <span>Everyone can reply!</span>
+                    </div>
+                    <div class="bg-gray-600 w-[90%] h-[0.2px] my-4"></div>
+                    <div class="extras flex gap-2 my-3 text-blue-500 items-center">
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            database
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            where_to_vote
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            mood
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            calendar_month
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:bg-blue-300 hover: rounded-full">
+                            location_on
+                        </span>
+                        <button
+                            class="bg-blue-500 px-6 py-2 ml-[42px] text-white font-bold text-sm rounded-full hidden md:block">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-600 w-full h-[1px]"></div>
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+
+
+                        <div class="image w-10 m-4">
+                            <img class="rounded-lg"
+                                src="https://c4.wallpaperflare.com/wallpaper/537/503/586/logo-rockstar-games-wallpaper-preview.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Rockstar Games</span> <span
+                                class="text-gray-700">@RockStarsss - Mar 12</span>
+                            <div>Elon! It's time to defeat the Bureaucracy in America</div>
+                            <div class="contentimg rounded-full m-3 ml-0">
+                                <img src="https://pbs.twimg.com/media/Gl2kdOoa4AAdPIh?format=jpg&name=small"
+                                    alt="noimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likes flex justify-around mx-3 text-gray-600">
+                        <div class="icon flex justify-center items-center">
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                chat_bubble
+                            </span> 1k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-green-400 rounded-full p-2">
+                                cached
+                            </span> 36k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-red-500 rounded-full p-2">
+                                favorite
+                            </span> 179k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                view_kanban
+                            </span> 29M
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                upload
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+
+
+                        <div class="image w-10 m-4">
+                            <img class="rounded-lg"
+                                src="https://c4.wallpaperflare.com/wallpaper/537/503/586/logo-rockstar-games-wallpaper-preview.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Rockstar Games</span> <span
+                                class="text-gray-700">@RockStarsss - Mar 12</span>
+                            <div>Elon! It's time to defeat the Bureaucracy in America</div>
+                            <div class="contentimg rounded-full m-3 ml-0">
+                                <img src="https://pbs.twimg.com/media/Gl2kdOoa4AAdPIh?format=jpg&name=small"
+                                    alt="noimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likes flex justify-around mx-3 text-gray-600">
+                        <div class="icon flex justify-center items-center">
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                chat_bubble
+                            </span> 1k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-green-400 rounded-full p-2">
+                                cached
+                            </span> 36k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-red-500 rounded-full p-2">
+                                favorite
+                            </span> 179k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                view_kanban
+                            </span> 29M
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                upload
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+
+
+                        <div class="image w-10 m-4">
+                            <img class="rounded-lg"
+                                src="https://c4.wallpaperflare.com/wallpaper/537/503/586/logo-rockstar-games-wallpaper-preview.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Rockstar Games</span> <span
+                                class="text-gray-700">@RockStarsss - Mar 12</span>
+                            <div>Elon! It's time to defeat the Bureaucracy in America</div>
+                            <div class="contentimg rounded-full m-3 ml-0">
+                                <img src="https://pbs.twimg.com/media/Gl2kdOoa4AAdPIh?format=jpg&name=small"
+                                    alt="noimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likes flex justify-around mx-3 text-gray-600">
+                        <div class="icon flex justify-center items-center">
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                chat_bubble
+                            </span> 1k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-green-400 rounded-full p-2">
+                                cached
+                            </span> 36k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-red-500 rounded-full p-2">
+                                favorite
+                            </span> 179k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                view_kanban
+                            </span> 29M
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                upload
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="flex">
+
+
+                        <div class="image w-10 m-4">
+                            <img class="rounded-lg"
+                                src="https://c4.wallpaperflare.com/wallpaper/537/503/586/logo-rockstar-games-wallpaper-preview.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Rockstar Games</span> <span
+                                class="text-gray-700">@RockStarsss - Mar 12</span>
+                            <div>Elon! It's time to defeat the Bureaucracy in America</div>
+                            <div class="contentimg rounded-full m-3 ml-0">
+                                <img src="https://pbs.twimg.com/media/Gl2kdOoa4AAdPIh?format=jpg&name=small"
+                                    alt="noimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likes flex justify-around mx-3 text-gray-600">
+                        <div class="icon flex justify-center items-center">
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                chat_bubble
+                            </span> 1k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-green-400 rounded-full p-2">
+                                cached
+                            </span> 36k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-red-500 rounded-full p-2">
+                                favorite
+                            </span> 179k
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-500 rounded-full p-2">
+                                view_kanban
+                            </span> 29M
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer hover:bg-blue-400 rounded-full p-2">
+                                upload
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third w-full hidden md:block">
+            <div class="search m-3 sticky top-0">
+                <input type="text" class="px-2 py-2 bg-gray-900  text-invert rounded-full w-1/2" placeholder="Search">
+            </div>
+
+            <div class="whats m-3 w-3/4 bg-gray-950 rounded-[10px] space-y-3 sticky top-0">
+                <h1 class="text-xl font-bold px-3">What's happening</h1>
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer ">
+                    <div class="font-bold text-gray-700">Photography</div>
+                    <div class="font-bold">#Nature</div>
+                    <div class="font-bold text-gray-700">57.2k Posts</div>
+                </div>
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer ">
+                    <div class="font-bold text-gray-700">Historical</div>
+                    <div class="font-bold">#Places</div>
+                    <div class="font-bold text-gray-700">30.1k Posts</div>
+                </div>
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer ">
+                    <div class="font-bold text-gray-700">Travelling</div>
+                    <div class="font-bold">#Globe</div>
+                    <div class="font-bold text-gray-700">78.9k Posts</div>
+                </div>
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer ">
+                    <div class="font-bold text-gray-700">World Cup</div>
+                    <div class="font-bold">#CWC 2015</div>
+                    <div class="font-bold text-gray-700">100.5k Posts</div>
+                </div>
+            </div>
+
+            <div class="who m-3 w-3/4 bg-gray-950 rounded-[10px] space-y-3 sticky top-[70vh]">
+                <h1 class="text-xl font-bold px-3">Who to follow</h1>
+                <div class="item p-3 space-y-3 flex flex-col">
+
+                    <div class="font-bold cursor-pointer px-3 flex justify-between items-center gap-5"><img
+                            src="https://pbs.twimg.com/profile_images/1417471791845478403/MzAWCfK7_400x400.jpg" alt=""
+                            class="h-10 rounded-full ">Rockstar Games <button
+                            class="bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="font-bold cursor-pointer px-3 flex justify-between items-center gap-5"><img
+                            src="https://pbs.twimg.com/profile_images/1844303004637265927/Wqe4kFfj_400x400.jpg" alt=""
+                            class="h-10 rounded-full ">Ubisoft <button
+                            class="bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="font-bold cursor-pointer px-3 flex justify-between items-center gap-5"><img
+                            src="https://pbs.twimg.com/profile_images/1874863240343162881/v8tem_DX_400x400.png" alt=""
+                            class="h-10 rounded-full ">Bethesda <button
+                            class="bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="font-bold cursor-pointer px-3 flex justify-between items-center gap-5"><img
+                            src="https://pbs.twimg.com/profile_images/1863978608097660928/bGtQIxEO_400x400.png" alt=""
+                            class="h-10 rounded-full ">Electronic Arts <button
+                            class="bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="font-bold cursor-pointer px-3 flex justify-between items-center gap-5"><img
+                            src="https://pbs.twimg.com/profile_images/1645445554258735104/A2geO7qj_400x400.jpg" alt=""
+                            class="h-10 rounded-full ">Activision <button
+                            class="bg-gray-700 text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800">
+                            Follow
+                        </button>
+                    </div>
+
+
+                </div>
+                <span class="text-blue-600 font-bold px-5 cursor-pointer hover:underline">Show More</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
